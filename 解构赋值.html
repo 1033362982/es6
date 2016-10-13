@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		   /*数组的解构赋值,同时给多个变量赋值*/
+		// let [num1,num2] = [12,30];
+		// [num1,num2]=[num2,num1];  /*调换两个元素的值*/
+		// console.log(num1);
+		// console.log(num2)
+		   /*对象的解构赋值*/
+		// let{name,age}={name:"zhang",age:12}
+		// console.log(name,age)
+			/**/
+		// function fun(){
+		// 	var arr=["zhangsan","lisi"]
+		// 	return arr;
+		// }
+		// let[name1,name2]=fun();
+		// console.log(name1,name2)
+			/**/
+		// function fun(){
+		// 	let obj={
+		// 		name:"zhang",
+		// 		age:12
+		// 	}
+		// 	return obj;
+		// }
+		// let{age,name}=fun();
+		// console.log(age,name)
+			/*传参*/
+		function fun({name,age}){
+			console.log(name);
+			console.log(age)
+		}
+		let obj={
+			name:"zhang",
+			age:12
+		} 
+		fun(obj)
+
+	</script>
+</body>
+</html>

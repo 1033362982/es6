@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+			/*es5*/
+		function Animals(){
+			
+		}
+			/*es6*/
+		class Animals{
+			constructor(name){
+				this.name=name;
+			}
+			sayName(){
+				alert(this.name)
+			}
+		}
+		class Cat extends Animals{
+			constructor(name){
+				super(name)
+			}
+		}
+		var cat=new Cat("xiaoming",5)
+		cat.sayName()
+	</script>
+</body>
+</html>

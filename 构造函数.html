@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="script/jquery.js"></script>
+	<script>
+			/*ES5*/
+		// function Cat(name,age){
+		// 	this.name=name;
+		// 	this.age=age;
+		// 	this.sayName=function(){
+		// 		alert(this.name)
+		// 	}
+		// }
+		// var cat=new Cat("xiaoming",5)
+		// cat.sayName()
+
+			/*ES6*/
+		class Cat{
+			constructor(name,age){
+				this.name=name;
+				this.age=age;
+			}
+			sayName(){
+				alert(this.name)
+			}
+		}
+	 	var cat=new Cat("xiaoming",5)
+		cat.sayName()
+	</script>
+</body>
+</html>
